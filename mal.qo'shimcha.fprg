@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NEXT NOUT"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-15 09:48:20 AM"/>
+        <attribute name="created" value="TkVYVCBOT1VUOyBERVNLVE9QLUw3MEs4SUU7IDIwMjQtMTEtMTU7IDA5OjE2OjA5IEFNOyAzMDc4"/>
+        <attribute name="edited" value="TkVYVCBOT1VUOyBERVNLVE9QLUw3MEs4SUU7IDIwMjQtMTEtMTU7IDA5OjQ4OjIwIEFNOyAzMDc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x1, x2, D" type="Real" array="False" size=""/>
+            <assign variable="a" expression="7"/>
+            <assign variable="b" expression="10"/>
+            <assign variable="c" expression="-9"/>
+            <assign variable="D" expression="b*b-4*a*c"/>
+            <if expression="D&gt;0">
+                <then>
+                    <assign variable="x1" expression="(-b+sqrt(D))/(2*a)"/>
+                    <assign variable="x2" expression="(-b-sqrt(D))/(2*a)"/>
+                    <output expression="&quot;Inomova   &quot; &amp; x1  &amp;&quot;   &quot; &amp; x2"/>
+                </then>
+                <else>
+                    <if expression="D=0">
+                        <then>
+                            <assign variable="x1" expression="-b/(2*a)"/>
+                            <output expression="&quot;Inomova    &quot;&amp;x1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
